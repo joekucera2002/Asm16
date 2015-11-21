@@ -1,4 +1,5 @@
-1. 
+1) Convert the following decimal values to binary:
+
 	a) 128 		= 1000 0000
 	b) 4096 	= 0001 0000 0000 0000
 	c) 256		= 0000 0001 0000 0000
@@ -25,7 +26,8 @@
 	x) 67		= 0100 0011
 	y) 888		= 0000 0011 0111 1000
 
-2. 
+2) Convert the following binary values to decimal:
+
 	a) 1001 1001	= 153
 	b) 1001 1101	= 157
 	c) 1100 0011	= 195
@@ -52,7 +54,8 @@
 	x) 1110 0110	= 230
 	y) 1001 0111	= 151
 
-3) 
+3) Convert the binary values in problem 2 to hexadecimal.
+
 	a) 1001 1001	= 99
     b) 1001 1101	= 9D
     c) 1100 0011	= C3
@@ -79,7 +82,8 @@
     x) 1110 0110	= E6
     y) 1001 0111	= 97
 
-4) 
+4) Convert the following hexadecimal values to binary:
+
 	a) 0ABCD	= 1010 1011 1100 1101
 	b) 1024 	= 0001 0000 0010 0100
 	c) 0DEAD 	= 1101 1110 1010 1101	
@@ -106,39 +110,54 @@
 	x) 0DAD 	= 1101 1010 1101
 	y) 9876		= 1001 1000 0111 0110
 
+Perform the following hex computations (leave the result in hex):
+
 5) 0x1234 + 0x9876
 	0xAAAA
+	
 6) 0x0FFF - 0x0F34
 	0x00CB
+	
 7) 0x0100 - 0x0001
 	0x00FF
+	
 8) 0x0FFE - 0x0001
 	0x0FFD
 
-9) A nibble is 4 bits of an 8 bit binary number. A nibble can converted to a single hexadecimal digit.
+9) What is the importance of a nibble?
 
-10)
-	a) 2
-	b) 4
-	c) 8
+	A nibble is 4 bits of an 8 bit binary number. A nibble can converted to a single hexadecimal digit.
 
-11)
-	a) 4
-	b) 8
-	c) 16
-	d) 32
+10) How many hexadecimal digits in:
 
-12)
-	a) 3
-	b) 7
-	c) 15
-	d) 31
+	a) a byte 			= 2
+	b) a word 			= 2
+	c) a double word	= 8
 
-13) Hexadecimal = h, Binary = b, Decimal = d
+11) How many bits in a:
+	
+	a) nibble		= 4
+	b) byte 		= 8
+	c) word			= 16 
+	d) double word	= 32
 
-14) Negatives in 4: a,c,e,h,i,j,k,u,w,y
+12) Which bit (number) is the H.O. bit in a:
 
-15) Sign extend to 16-bit hexadecimal:
+	a) nibble 		= 3
+	b) byte 		= 7
+	c) word 		= 15
+	d) double word	= 31
+
+13) What character do we use as a suffix for hexadecimal numbers? Binary numbers? Decimal numbers?
+
+	Hexadecimal = h, Binary = b, Decimal = d
+
+14) Assuming a 16-bit two’s complement format, determine which of the values in question 4 are positive and which are negative.
+
+	a,c,e,h,i,j,k,u,w,y
+
+15) Sign extend all of the values in question two to sixteen bits. Provide your answer in hex.
+
 	a) 1001 1001	= 99 = FF99
 	b) 1001 1101	= 9D = FF9D
 	c) 1100 0011	= C3 = FFC3
@@ -164,3 +183,101 @@
 	w) 1011 1001	= B9 = FFB9
 	x) 1110 0110	= E6 = FFE6
 	y) 1001 0111	= 97 = FF97
+
+16) Perform the bitwise AND operation on the following pairs of hexadecimal values. Present your answer in hex. (Hint: convert hex values to binary, do the operation, then convert back to hex).
+
+	a) 0FF00, 0FF0
+		1111 1111 0000 0000
+		0000 1111 1111 0000
+		0000 1111 0000 0000
+		0F00
+	b) 0F00F, 1234 
+		1111 0000 0000 0000
+		0001 0010 0011 0100
+		0001 0000 0000 0000
+		1000
+	c) 4321, 1234 
+		0100 0011 0010 0001
+		0001 0010 0011 0100
+		0000 0010 0010 0000
+		0220
+	d) 2341, 3241 
+		0010 0011 0100 0001
+		0011 0010 0100 0001
+		0010 0010 0100 0001
+		2241
+	e) 0FFFF, 0EDCB
+		1111 1111 1111 1111
+		1110 1101 1100 1011
+		1110 1101 1100 1011
+		EDCB
+	f) 1111, 5789 
+		0001 0001 0001 0001
+		0101 0111 1000 1001
+		0001 0001 0000 0001
+		1101
+	g) 0FABA, 4322 
+		1111 1010 1011 1010
+		0100 0011 0010 0010
+		0100 0010 0010 0010
+		4222
+	h) 5523, 0F572 
+		0101 0101 0010 0011
+		1111 0101 0111 0010
+		0101 0101 0010 0010
+		5522
+	i) 2355, 7466 
+		0010 0011 0101 0101
+		0111 0100 0110 0110
+		0010 0000 0100 0100
+		2044
+	j) 4765, 6543
+		0100 0111 0110 0101
+		0110 0101 0100 0011
+		0100 0101 0100 0001
+		4561
+	k) 0ABCD, 0EFDC
+		1010 1011 1100 1101
+		1110 1111 1101 1100
+		1010 1011 1100 1100
+		ABCC
+	l) 0DDDD, 1234
+		1101 1101 1101 1101
+		0001 0010 0011 0100
+		0001 0000 0001 0100
+		1014
+	m) 0CCCC, 0ABCD
+		1100 1100 1100 1100
+		1010 1011 1100 1101
+		1000 1000 1100 1100
+		88CC
+	n) 0BBBB, 1234
+		1011 1011 1011 1011
+		0001 0010 0011 0100
+		0001 0010 0011 0000
+		1230
+	o) 0AAAA, 1234
+		1010 1010 1010 1010
+		0001 0010 0011 0100
+		0000 0010 0010 0000
+		0220
+	p) 0EEEE, 1248 
+		1110 1110 1110 1110
+		0001 0010 0100 1000
+		0000 0010 0100 1000
+		0248
+	q) 8888, 1248 
+		1000 1000 1000 1000
+		0001 0010 0100 1000
+		0000 0000 0000 1000
+		0008
+	r) 8086, 124F 
+		1000 0000 1000 0110
+		
+	s) 8086, 0CFA7 
+	t) 8765, 3456
+	u) 7089, 0FEDC 
+	v) 2435, 0BCDE 
+	w) 6355, 0EFDC 
+	x) 0CBA, 6884 
+	y) 0AC7, 365
